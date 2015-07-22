@@ -2,6 +2,20 @@
 <h2 id="title">Ground_Under Music Source</h2>
 <div class="container">
 
-  {{outlet}}
+{{#if session.isAuthenticated}}
+  Hi, {{session.email}}
+  <br/>
+  You can't see this text unless you're logged in!
+  <br/>
+  Click this button to logout:
+  <button {{action 'invalidateSession'}}>Logout</button>
+  <br/>
+  If you try to go to the
+  {{#link-to "login"}}Login{{/link-to}}
+  page, you should get redirected!
+{{else}}
+  {{#link-to "login"}}Login{{/link-to}}
+{{/if}}
 
+{{outlet}}
 </div>

@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('show', {path: ':artist_id'});
   });
   this.route('songs', function() {});
+  this.route('login');
 });
 
 export default Router;
