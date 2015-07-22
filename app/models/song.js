@@ -6,5 +6,8 @@ export default DS.Model.extend({
   key: DS.attr('string'),
   bpm: DS.attr('string'),
   description: DS.attr('string'),
-  price: DS.attr('string')
+  price: DS.attr('string'),
+
+  libraries: DS.hasMany('library')
+
 });

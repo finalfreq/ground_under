@@ -1,14 +1,12 @@
-<h4>Song Show page</h4>
-{{outlet}}
+<h4>{{ model.name }}</h4>
 
-{{ model.name }}
+<strong>Genre: </strong>{{ model.genre}}
 <br>
-{{ model.genre}}
+<strong>Key: </strong>{{ model.key}}
 <br>
-{{ model.key}}
+<strong>BPM: </strong>{{ model.bpm}}
 <br>
-{{ model.bpm}}
+<strong>Description: </strong>{{ model.description}}
 <br>
-{{ model.description}}
-<br>
-{{ model.price}}
+<strong>Price: </strong>{{ model.price}}
+{{outlet}}

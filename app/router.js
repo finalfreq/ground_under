@@ -12,7 +12,9 @@ Router.map(function() {
   });
   this.route('songs', function() {
     this.route('show', {path: ':song_id'});
+    this.route('new');
   });
+  this.route('libraries');
 });
 
 export default Router;
