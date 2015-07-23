@@ -36,6 +36,17 @@
             </form>
           </li>
           <li><a >Cart</a></li>
+          <li><a>
+            {{#if session.isAuthenticated}}
+            {{session.secure.email}}
+
+            <button {{action 'invalidateSession'}}>Logout</button>
+
+          {{else}}
+            {{#link-to "login"}}Login{{/link-to}}
+          {{/if}}
+            </a>
+          </li>
         </ul>
       </div>
     </div>

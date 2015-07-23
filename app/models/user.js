@@ -13,6 +13,3 @@ export default DS.Model.extend({
   libraries: DS.hasMany('library')
 
 });
-
-
-export default;
