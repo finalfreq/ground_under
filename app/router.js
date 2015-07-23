@@ -6,11 +6,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home', {path: '/'});
   this.route('users');
-  this.route('artists', function() {
-    this.route('show', {path: ':artist_id'});
+  this.route('songs', function() {
+    this.route('show', {path: ':song_id'});
+    this.route('new');
   });
-  this.route('songs', function() {});
+  this.route('libraries');
+  this.route('charges', function() {
+    this.route('new');
+  });
   this.route('login');
 });
 
