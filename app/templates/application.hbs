@@ -3,7 +3,7 @@
 <div class="container">
 
 {{#if session.isAuthenticated}}
-  Hi, {{session.authenticator}}
+  Hi, {{session.secure.email}}
   <br/>
   You can't see this text unless you're logged in!
   <br/>
