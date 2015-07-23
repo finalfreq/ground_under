@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('charges', function() {
     this.route('new');
   });
+  this.route('login');
 });
 
 export default Router;

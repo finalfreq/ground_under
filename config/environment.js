@@ -19,10 +19,20 @@ module.exports = function(environment) {
     }
   };
 
-    ENV.stripe = {
-      publishableKey: 'pk_test_OtGLDc4zCAdDcd7zlHpEE0xa',
-      key:'pk_test_OtGLDc4zCAdDcd7zlHpEE0xa'
+  ENV['simple-auth'] = {
+    authorizer: 'simple-auth-authorizer:devise',
   };
+
+  ENV['simple-auth-devise'] = {
+    tokenAttributeName: 'token',
+    identificationAttributeName: 'email'
+  };
+
+
+  ENV.stripe = {
+    publishableKey: 'pk_test_OtGLDc4zCAdDcd7zlHpEE0xa',
+    key:'pk_test_OtGLDc4zCAdDcd7zlHpEE0xa'
+};
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
