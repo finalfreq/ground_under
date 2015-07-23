@@ -7,11 +7,11 @@ export default Ember.Controller.extend({
      * The token looks like this https://stripe.com/docs/api#tokens
      */
     processStripeToken: function(token) {
-      charge = this.store.createRecord('charge', {
-        amount: this.get('amount') * 100,
-        token: token
+      var model = this.get('model')
+      var charge = this.store.createRecord('charge', {
+        amount: model.get('price'),
+        token: token.id
       });
-      debugger
       var _this = this
       charge.save().then(function(){
         _this.transitionTo('songs.index')

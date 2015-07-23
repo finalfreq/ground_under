@@ -8,12 +8,12 @@
 <br>
 <strong>Description: </strong>{{ model.description}}
 <br>
-<strong>Price: </strong>{{ model.price}}
+<strong>Price: </strong>${{ model.price}}
 {{outlet}}
 {{stripe-checkout
   image="/square-image.png"
   name="Demo Site"
   description="2 widgets ($20.00)"
-  amount=chargePrice
+  amount=model.chargePrice
   action="processStripeToken"
 }}
