@@ -13,6 +13,9 @@ Router.map(function() {
     this.route('new');
   });
   this.route('libraries');
+  this.route('charges', function() {
+    this.route('new');
+  });
 });
 
 export default Router;

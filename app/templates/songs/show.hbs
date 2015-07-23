@@ -11,10 +11,9 @@
 <strong>Price: </strong>{{ model.price}}
 {{outlet}}
 {{stripe-checkout
-  image='/img/.png'
-  name="Demote Site"
+  image="/square-image.png"
+  name="Demo Site"
   description="2 widgets ($20.00)"
-  amount=2000
+  amount=chargePrice
   action="processStripeToken"
 }}
-{{outlet}}
