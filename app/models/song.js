@@ -8,6 +8,7 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   price: DS.attr('number'),
   libraries: DS.hasMany('library'),
+  track: DS.attr('file'),
   chargePrice: Ember.computed('price',function() {
     return this.get('price') * 100 })
 

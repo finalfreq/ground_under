@@ -20,7 +20,10 @@ export default Ember.Controller.extend({
   actions: {
     save: function() {
       if (this.get('isValid')) {
-        var _this = this
+        var _this = this;
+        var file = document.getElementById('file-field').files[0];
+        debugger;
+        this.get('model').set('track', file);
         this.get('model').save().then(function(song){
           _this.transitionToRoute('songs.show', song);
         });
