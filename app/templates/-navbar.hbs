@@ -40,10 +40,11 @@
             {{#if session.isAuthenticated}}
             {{session.secure.email}}
 
-            <button {{action 'invalidateSession'}}>Logout</button>
+            <button class="btn btn-default btn-sm" {{action 'invalidateSession'}}>Logout</button>
 
           {{else}}
-            {{#link-to "login"}}Login{{/link-to}}
+          <button class="btn btn-success btn-sm" {{action 'showModal' 'login-modal'}}>login</button>
+
           {{/if}}
             </a>
           </li>
