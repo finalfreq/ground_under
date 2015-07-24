@@ -31,11 +31,11 @@
             <li><a>
               You are logged in as: {{session.secure.email}}
             </a></li>
-            <li><a>
-              <button class="btn btn-default" {{action 'invalidateSession'}}>Logout</button>
-            </a></li>
+            <li>
+              <a {{action 'invalidateSession'}}>Logout</a>
+            </li>
           {{else}}
-            <li><a>{{#link-to "login"}}Login{{/link-to}}</a></li>
+            <li><a {{action 'showModal' 'login-modal'}}>login</a></li>
           {{/if}}
         </ul>
       </div>
