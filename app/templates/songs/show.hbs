@@ -4,9 +4,8 @@
       <img src="{{model.track}}" alt="" />
       <span class="pull-right"> <strong>Price: </strong>${{ model.price}}
         {{stripe-checkout
-          image="/square-image.png"
-          name="Demo Site"
-          description="2 widgets ($20.00)"
+          name=model.name
+          description=model.user
           amount=model.chargePrice
           action="processStripeToken"
         }}</span>
