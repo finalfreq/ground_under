@@ -1,7 +1,9 @@
 <div class="row clearfix">
   <div class="col-md-12">
     <h6>Track
-      <img src="{{model.track}}" alt="" />
+      <audio src="{{model.track}}" preload="auto" controls>
+        testtesttest
+      </audio>
       <span class="pull-right"> <strong>Price: </strong>${{ model.price}}
         {{stripe-checkout
           name=model.name
