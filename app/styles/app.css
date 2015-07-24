@@ -8,10 +8,10 @@
   max-height: 225px;
 }
 
-#ember566 {
-  background-color: #77b300;
+.ember-view .stripe-checkout  {
+  background-color: #77b300 ;
   border: #77b300;
-  color: #ffffff;
+  color: #ffffff ;
   display: inline-block;
   padding: 4px 8px;
   border: 1px solid transparent;
