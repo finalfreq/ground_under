@@ -2,8 +2,25 @@
 
 {{outlet}}
 
-<ul>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Genre</th>
+      <th>BPM</th>
+    </tr>
+  </thead>
+  <tbody>
   {{#each model as |song|}}
-    <li>{{link-to song.name "songs.show" song}}</li>
+    <tr class="active">
+      <td>{{song.key}}</td>
+      <td>{{link-to song.name "songs.show" song}}</td>
+      <td>artist</td>
+      <td>{{song.genre}}</td>
+      <td>{{song.bpm}}</td>
+    </tr>
   {{/each}}
-</ul>
+  </tbody>
+</table>

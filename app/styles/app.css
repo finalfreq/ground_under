@@ -2,3 +2,19 @@
   transition: background-color .5s ease;
   background: purple;
 }
+
+.audio img {
+  max-width: 1170px;
+  max-height: 225px;
+}
+
+#ember566 {
+  background-color: #77b300;
+  border: #77b300;
+  color: #ffffff;
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+}

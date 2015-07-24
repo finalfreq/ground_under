@@ -13,18 +13,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>{{#link-to "songs.new" }}Upload Song{{/link-to}}</li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Songs <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
             <li>{{#link-to "songs.index"}}All Songs{{/link-to}}</li>
             <li></li>
-            <li class="divider"></li>
             <li><a href="#">Your Purchases</a></li>
-            <li class="divider"></li>
             <li><a href="#">Your Uploads</a></li>
           </ul>
-        </li>
-      </ul>
       <div class="navbar-right">
         <ul class="nav navbar-nav ">
           {{#if session.isAuthenticated}}
