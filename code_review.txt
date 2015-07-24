@@ -1,0 +1,89 @@
+Jess and Erin's comments:
+
+Is the Github documentation - commits and README - thorough and descriptive?
+
+  Overall good README, commit messages are clear. Good markup.
+
+Is there good spec coverage?
+
+  Spec only covers models.
+
+Do all specs pass?
+
+  Only 4 out of 10 specs are passing.
+
+Is the application logic clear and easy to navigate?
+
+easy to navigate, yes. forms allow input that aren't numbers when they should be. Price will be zero if input is not a number. Your Uploads doesnt list my uploaded songs. My purchases were not listed either.
+
+
+Can you make a test payment through Stripe?
+
+Payments are working well, I like how to got the button on the stripe payment to change depending on price.
+
+Is the site user-friendly?
+
+Yes, once you get the authentication working this will be great.
+
+
+Are there opportunities for refactoring?
+
+  No opportunities stood out for refactoring. Controllers and model code seems to be pretty   streamlined and coherent.
+
+What features stand out?
+
+Color scheme is great!! Really fits this app well. The idea for the app is also great!
+
+What features could be improved?
+
+  The validations are definitely going to be important for adding songs. Also maybe consider only   being able to add songs if you're logged in?
+
+  Perhpaps some more movement from the sound waves when a song is playing.
+
+Do you have any additional constructive criticism or positive feedback to share?
+
+  Wow sweet app. 
+
+
+Franz and Chris comments:
+
+Is the Github documentation - commits and README - thorough and descriptive?
+
+Strong README, especially the section that describes getting the app off the ground. This is especially important because we haven't used Ember in a while!
+
+Commit history is clear, though sometimes your labels aren't as descriptive as they could be: example: "add update". But to what?
+
+
+Is there good spec coverage?
+
+No specs with Ember, which makes sense. Rspec tests models on the backend, but tests don't pass because there aren't any validations in the models yet.
+
+Do all specs pass?
+
+4 out of 10 passing at the moment. Failing tests are testing callbacks that aren't in the model. Add validations to models!
+
+Is the application logic clear and easy to navigate?
+
+It's difficult to follow the application logic of the front end because of Ember and through no fault of the coders. Back end is clean and easy to follow. It must have been a pain figuring out how to wire the controllers!
+
+Can you make a test payment through Stripe?
+
+Yes, but it's hard to tell if the payment goes through, as it doesn't show up in purchases and there is no message that confirms the purchase.
+
+Is the site user-friendly?
+
+When completing forms, strings can be inputted into BPM and price, setting them to 0. Forms could be changed to number field (if Ember allows), or there could be a callback for this. Adding more of a visual element on the front end would be cool (album or artist covers, for example).
+
+Are there opportunities for refactoring?
+
+Consider factoring out Ember. That would make for a great app! :)
+
+What features stand out?
+App itself is as stripped down as a good electronic beat. Like the waveform that's meant to represent the song! Would love to see what it looks like if it moves! Also cool how you actually have an uploadable song function that can be replayed, as we haven't experimented much with that. Really cool how you integrated that with paperclip.
+
+What features could be improved?
+
+There are various things, but considering the limited time involved and incorporating Ember, would've been tough to do much more. Major bonus points for taking on the challenge of adding an Ember front end!
+
+Do you have any additional constructive criticism or positive feedback to share?
+Black background with white font is cool but tough on the eyes!
